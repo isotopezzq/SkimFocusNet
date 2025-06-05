@@ -20,14 +20,15 @@ Here is the official implementation for IJCV 2025 paper "SkimthenFocus: Integrat
  Extensive experiments demonstrate that SkimFocusNet achieves state-of-the-art performance with significant improvements. We also conduct a thorough ablation study to evaluate the network components. 
 
 ## Usage
+This implementation is based on [TransRAC](https://github.com/SvipRepetitionCounting/TransRAC).
 ### Dataset Preparation
 Please refer to the Homepage of [RepCount Dataset](https://svip-lab.github.io/dataset/RepCount_dataset.html). 
 
 ### Environment
-Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blob/main/requirement.txt) for installation
+Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blob/main/requirement.txt) for installation.
 
 ### Checkpoint Preparation
-Firstly, you should load the pretrained backbone model [videoswintiny](https://pan.baidu.com/s/1L5nIYyTIccDdk1troYzdSQ) with code g68w into the folder [pretrained](https://github.com/isotopezzq/SkimFocusNet/blob/main/pretrained)
+Firstly, you should load the pretrained backbone model [videoswintiny](https://pan.baidu.com/s/1L5nIYyTIccDdk1troYzdSQ) with code g68w into the folder [pretrained](https://github.com/isotopezzq/SkimFocusNet/blob/main/pretrained).
 
 ### NPZ File Generation
 ` python ./tools/newnpzselect.py `

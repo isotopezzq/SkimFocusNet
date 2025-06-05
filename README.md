@@ -27,7 +27,7 @@ Please refer to the Homepage of [RepCount Dataset](https://svip-lab.github.io/da
 Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blob/main/requirement.txt) for installation
 
 ### Checkpoint Preparation
-Firstly, you should load the pretrained backbone model [videoswintiny](https://pan.baidu.com/s/1L5nIYyTIccDdk1troYzdSQ) with code g68w in to the folder [pretrained](https://github.com/isotopezzq/SkimFocusNet/main/pretrained)
+Firstly, you should load the pretrained backbone model [videoswintiny](https://pan.baidu.com/s/1L5nIYyTIccDdk1troYzdSQ) with code g68w into the folder [pretrained](https://github.com/isotopezzq/SkimFocusNet/blob/main/pretrained)
 
 ### NPZ File Generation
 ` python ./tools/newnpzselect.py `

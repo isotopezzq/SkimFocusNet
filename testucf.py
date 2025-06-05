@@ -125,12 +125,8 @@ def test_loop(n_epochs, model, root_path, thresh, inference=True, batch_size=1, 
         print('=====================================================')
 device_ids = [0]
 
-# # # we pick out the fixed frames from raw video file, and we store them as .npz file
-# # # we currently support 64 or 128 frames
-# data root path
 
-# root_path = '/home/zhaozhengqi/DATA/LLSP/newnpz/test/'
-root_path = '/home/zhaozhengqi/DATA/UCF/npzselectval/'
+root_path = '/path/to/UCF/npzselectval/'
 
 test_video_dir = 'test'
 test_label_dir = 'test.csv'

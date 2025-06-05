@@ -40,8 +40,8 @@ Secondly, for testing, we also prepared our [checkpoint](https://pan.baidu.com/s
 ` python test.py `
 
 ### Additionally
-For specified action counting, please refer to the [categorized dataset]() with 
-` python ./tools/newnpzcat.py `
+For specified action counting, please refer to the [categorized dataset]() with  
+` python ./tools/newnpzcat.py ` to generate NPZ files.
 ## Citation 
 If you find this project or dataset useful, please consider citing the paper.
 ```

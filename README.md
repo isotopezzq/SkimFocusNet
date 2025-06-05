@@ -27,7 +27,7 @@ Please refer to the Homepage of [RepCount Dataset](https://svip-lab.github.io/da
 Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blob/main/requirement.txt) for installation
 
 ### NPZ File Generation
-` python ./tools/newnpz64.py `
+` python ./tools/newnpzselect.py `
 
 ### TRAIN & TEST
 ` python train.py `

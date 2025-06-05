@@ -16,7 +16,7 @@ device_ids = [0]
 # # # we pick out the fixed frames from raw video file, and we store them as .npz file
 # # # we currently support 64 or 128 frames
 # data root path
-root_path = '/home/zhaozhengqi/DATA/LLSP/newnpzSelect'
+root_path = '/path/to/newnpzSelect'
 
 train_video_dir = 'train'
 train_label_dir = 'train.csv'

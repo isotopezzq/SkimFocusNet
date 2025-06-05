@@ -30,7 +30,7 @@ Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blo
 ### Checkpoint Preparation
 Firstly, you should load the pretrained backbone model [videoswintiny](https://pan.baidu.com/s/1L5nIYyTIccDdk1troYzdSQ) with code g68w into the folder [pretrained](https://github.com/isotopezzq/SkimFocusNet/blob/main/pretrained).
 
-Secondly, for testing, we also prepared our [checkpoint](https://pan.baidu.com/s/1Y-vcwsuT05byPD1wWBJfOg) with code vu65. you should load the checkpoint into the folder [checkpoint/ours](https://github.com/isotopezzq/SkimFocusNet/blob/main/checkpoint/ours).
+Secondly, for testing, we also prepared our [checkpoint](https://pan.baidu.com/s/1Y-vcwsuT05byPD1wWBJfOg) with code vu65. You should load the checkpoint into the folder [checkpoint/ours](https://github.com/isotopezzq/SkimFocusNet/blob/main/checkpoint/ours).
 ### NPZ File Generation
 ` python ./tools/newnpzselect.py `
 

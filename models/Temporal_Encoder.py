@@ -290,4 +290,15 @@ class SingleStage(nn.Module):
             x = blk(x)
         x = self.norm(x)
         x = x.permute(0, 2, 1).contiguous()
+
         return x
+
+
+
+if __name__ == '__main__':
+    print('xxxxx')
+    x = torch.randn(32, 512, 64)
+    model = SingleStage(in_feat_dim=512)
+    out = model(x)
+    import pdb;pdb.set_trace()
+    

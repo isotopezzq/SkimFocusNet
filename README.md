@@ -17,14 +17,17 @@ Here is the official implementation for IJCV 2025 paper "SkimthenFocus: Integrat
  containing multiple repetitive motions. On Multi-RepCount, our SkimFoucsNet can perform specified action counting, that
  is, to enable counting a particular action type by referencing an exemplary video. This capability substantially exhibits
  our method’s robustness, particularly in accurately performing action counting despite the presence of interfering actions.
- Extensive experimentsdemonstratethatSkimFocusNetachievesstate-of-the-artperformanceswithsignificantimprovements. We also conduct a thorough ablation study to evaluate the network components. 
+ Extensive experiments demonstrate that SkimFocusNet achieves state-of-the-art performance with significant improvements. We also conduct a thorough ablation study to evaluate the network components. 
 
 ## Usage
 ### Dataset Preparation
 Please refer to the Homepage of [RepCount Dataset](https://svip-lab.github.io/dataset/RepCount_dataset.html). 
 
-### Enviroment
+### Environment
 Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blob/main/requirement.txt) for installation
+
+### Checkpoint Preparation
+Firstly, you should load the pretrained backbone model [videoswintiny](https://pan.baidu.com/s/1L5nIYyTIccDdk1troYzdSQ) with code g68w in to the folder [pretrained](https://github.com/isotopezzq/SkimFocusNet/main/pretrained)
 
 ### NPZ File Generation
 ` python ./tools/newnpzselect.py `

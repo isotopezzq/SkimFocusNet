@@ -36,6 +36,6 @@ Please refer to [requirement.txt](https://github.com/isotopezzq/SkimFocusNet/blo
 
 ## Citation 
 If you find this project or dataset useful, please consider citing the paper.
-'''
+```
 Zhao, Z., Huang, X., Zhou, H. et al. Skim then Focus: Integrating Contextual and Fine-grained Views for Repetitive Action Counting. Int J Comput Vis (2025). https://doi.org/10.1007/s11263-025-02471-x
-'''
+```

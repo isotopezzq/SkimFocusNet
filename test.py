@@ -1,25 +1,35 @@
+"""test TransRAC model"""
 import os
-from models.SkimFocusNet import SkimFocusNet
+## if your data is .mp4 form, please use RepCountA_raw_Loader.py
+# from dataset.RepCountA_raw_Loader import MyData
+## if your data is .npz form, please use RepCountA_Loader.py. It can speed up the training
+from dataset.RepCountA_Loader import MyData
+from models.TransRAC import TransferModel
 from testing.test_looping import test_loop
 
-device_ids = [0] #GPU index 0,1,2,3
+device_ids = [0]
 
-root_path = '/your/data/root/'
+# # # we pick out the fixed frames from raw video file, and we store them as .npz file
+# # # we currently support 64 or 128 frames
+# data root path
+root_path = '/home/zhaozhengqi/DATA/LLSP/newnpzSelect/test/'
 
 test_video_dir = 'test'
 test_label_dir = 'test.csv'
 
-# load the pretrained SwinT
+# video swin transformer pretrained model and config
 config = './configs/recognition/swin/swin_tiny_patch244_window877_kinetics400_1k.py'
 checkpoint = './pretrained/swin_tiny_patch244_window877_kinetics400_1k.pth'
 
-lastckpt = './checkpoint/ours/' #ckpt folder
+# TransRAC trained model checkpoint, we will upload soon.
+# lastckpt = './transrac_ckpt_pytorch_171.pt'
+lastckpt = './checkpoint/ours/'
 
 NUM_FRAME = 64
+# multi scales(list). we currently support 1,4,8 scale.
 SCALES = [4]
+# test_dataset = MyData(root_path, test_video_dir, test_label_dir, num_frame=NUM_FRAME)
+my_model = TransferModel(config=config, checkpoint=checkpoint, num_frames=NUM_FRAME, scales=SCALES, OPEN=False)
 NUM_EPOCHS = 1
 
-thresh = 0.32       #select valid c_diff below thresh
-my_model = SkimFocusNet(config=config, checkpoint=checkpoint, num_frames=NUM_FRAME, scales=SCALES, OPEN=False)
-
-test_loop(NUM_EPOCHS, my_model, root_path, thresh=thresh, lastckpt=lastckpt, device_ids=device_ids) 
+test_loop(NUM_EPOCHS, my_model, root_path, thresh=0.27, lastckpt=lastckpt, device_ids=device_ids)
